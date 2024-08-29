@@ -8,17 +8,17 @@ function playGame(userChoice) {
   let outcome = "";
 
   if (userChoice === compMove) {
-    outcome = "We tied";
+    outcome = "You tied";
   } else {
     switch (userChoice) {
       case "rock":
-        outcome = compMove === "scissors" ? "We won" : "We lost";
+        outcome = compMove === "scissors" ? "You won" : "You lost";
         break;
       case "paper":
-        outcome = compMove === "rock" ? "We won" : "We lost";
+        outcome = compMove === "rock" ? "You won" : "You lost";
         break;
       case "scissors":
-        outcome = compMove === "paper" ? "We won" : "We lost";
+        outcome = compMove === "paper" ? "You won" : "You lost";
         break;
     }
   }
